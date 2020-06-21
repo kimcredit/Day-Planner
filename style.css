@@ -33,59 +33,6 @@ body {
       padding: 10px 0 10px 0;
   }
   
-  .description{
-    white-space: pre-wrap;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  /* .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  } */
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-  
-
- .schedule {
-    
-  }
 .one-hour {
     display: flex;
     justify-content: center;
@@ -103,16 +50,12 @@ body {
     border-radius: 20px 0px 0px 20px;
 }
 .user-input {
-    padding: 10px;
+    padding: 20px;
     height: 100px;
     width: 60%;
     border: 1px;
-    color:#848484;
+    color:#2d2d2d;
     background-color: #f1f1f1;;
-}
-
-.saved-input {
-    color: black;
 }
 
 .save-button{
@@ -127,8 +70,8 @@ body {
     background-color: #e1e1e1;
 }
 
-
-.past-time {
+.past-time,
+.past-save-button  {
     background-color: #fd8a8a;
 }
 
@@ -136,24 +79,17 @@ body {
     background-color: #ffd0d0;
 }
 
-.past-save-button {
-    background-color: #fd8a8a;
-}
-
 .past-save-button:hover {
     background-color: #ffb4b4;
 }
   
-.present-time {
+.present-time,
+.present-save-button {
     background-color: #83b9e6;
 }
   
 .present-input {
     background-color: #dcefff;
-}
-  
-.present-save-button {
-    background-color: #83b9e6;
 }
 
 .present-save-button:hover {
