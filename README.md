@@ -17,3 +17,5 @@ If the user hits the save button next to the text area, that event will be saved
 If the user wants to clear an event, they can clear the text area and re-save. 
 
 The web-page resets at midnight.
+
+Preview it here: https://kimcredit.github.io/Day-Planner/
