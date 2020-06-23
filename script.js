@@ -1,37 +1,13 @@
 //wait until everything is loaded to show items
 $(document).ready(function () {
-    
-    // //getting current week day (monday-friday)
-    var d = new Date();
-    var weekDay = new Date().toLocaleDateString('en', {weekday:'long'})
-    
-    //getting current month
-    var months = ['January', 'February', 'March', 
-                'April', 'May', 'June', 'July', 
-                'August', 'September', 'October', 
-                'November', 'December'
-    ];
-            
-    var month = months[d.getMonth()]; 
 
-    //getting current day
-    var day = d.getUTCDate();
-    var today;
-
-    //adding ordinal indicators to numbers
-    if (day === 1 || day === 21 || day === 31) {
-        today = (day + "st");
-    }else if (day === 2 || day === 21) {
-        today = (day + "nd");
-    }else if (day === 3 || day === 23) {
-        today = (day + "rd");
-    }else (today = day + "th");
+    console.log(moment().format("h"))
 
     //make the inner text of current day contain our weekday, month, and day
-    $("#currentDay").text(weekDay + ", " + month + " " + today);
+    $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
     //getting current hour: 
-    var currentTime = d.getHours();
+    var currentTime = Number(moment().format("H"));
 
     //making object constructor for each hour block
     function hourSections (hour, value) {
